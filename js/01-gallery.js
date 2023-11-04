@@ -34,13 +34,13 @@ function handleClick(event) {
   `, {
     onShow: () => window.addEventListener('keydown', onPress),
     onClose: () => window.removeEventListener('keydown', onPress)
-  });
+  })
 
   function onPress(e) {
     if (e.key === 'Escape') {
       instance.close();
     }
   }
-
+  
   instance.show()
 }
